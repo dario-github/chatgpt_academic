@@ -8,6 +8,7 @@ packages = [{include = "chatgpt_academic"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pymupdf = "^1.21.1"
 
 
 [build-system]
