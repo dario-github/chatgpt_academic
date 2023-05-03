@@ -3,7 +3,7 @@ def check_proxy(proxies):
     import requests
     proxies_https = proxies['https'] if proxies is not None else '无'
     try:
-        response = requests.get("https://ipapi.co/json/",
+        response = requests.get("https://ipapi.co/json/?key=VS19QTAbkBfyr9BZzs66yGHX7kEnaOWTpLwSwelqfsqdNQqzjs",
                                 proxies=proxies, timeout=4)
         data = response.json()
         print(f'查询代理的地理位置，返回的结果是{data}')
